@@ -16,5 +16,5 @@
 
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'fearlexroot!');
 
