@@ -2,12 +2,12 @@
 /**
  * WordPress Multi-Environment Config - Load config settings
  *
- * @package    Studio 24 WordPress Multi-Environment Config
+ * @package    Fearlex Group WordPress Multi-Environment Config
  * @version    2.0.0
- * @author     Studio 24 <hello@studio24.net>
+ * @author     Arleys Resco <arleys@fearlexgroup.com>
  */
 
-function s24_load_environment_config() {
+function fg_load_environment_config() {
 
     /**
      * Setup environment
@@ -144,8 +144,8 @@ function s24_load_environment_config() {
     }
 
 }
-s24_load_environment_config();
 
+fg_load_environment_config();
 
 /**
  * Load config
@@ -161,3 +161,6 @@ require  __DIR__ . '/wp-config.' . WP_ENV . '.php';
 if (file_exists( __DIR__ . '/wp-config.local.php')) {
     require  __DIR__ . '/wp-config.local.php';
 }
+
+// 4th - Load plugin config file for current environment
+require __DIR__ . '/wp-config.plugins.php';

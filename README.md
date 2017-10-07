@@ -1,4 +1,4 @@
-# Studio 24 WordPress Multi-Environment Config
+# Fearlex Group WordPress Multi-Environment Config
 
 This repository contains Studio 24's standard config setup for WordPress, which 
 loads different config based on current environment. This allows you to have different

@@ -59,25 +59,21 @@ $table_prefix  = 'wp_';
  */
 define('WPLANG', '');
 
-
-// Recommended WP config settings, uncomment to use these
+/**
+ * WP Editing Limits.
+ */
+define('AUTOSAVE_INTERVAL', 300); // 5 Minutes.
+define('WP_POST_REVISIONS', 3); // Set max revisions (false to disable).
+define('EMPTY_TRASH_DAYS', 15);  // 15 days.
+define('DISALLOW_FILE_EDIT', true); // Disable Plugin & Editor Access.
 
 /**
  * Increase memory limit. 
  */
-//define('WP_MEMORY_LIMIT', '64M');
+define('WP_MEMORY_LIMIT', '256M');
 
 /**
- * Limit post revisions.
+ * SSL Mode
  */
-//define('WP_POST_REVISIONS', 5);
-
-/**
- * Disable automatic updates.
- */
-//define( 'AUTOMATIC_UPDATER_DISABLED', true );
-
-/**
- * Disable file editor.
- */
-//define( 'DISALLOW_FILE_EDIT', true );
+// define('FORCE_SSL_LOGIN', true);
+// define('FORCE_SSL_ADMIN', true); //-- Force SSL for WordPress Admin.

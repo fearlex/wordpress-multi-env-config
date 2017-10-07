@@ -4,16 +4,16 @@
  *
  * Enter any WordPress config settings that are specific to this environment 
  * in this file.
- * 
- * @package    Studio 24 WordPress Multi-Environment Config
+ *
+ * @package    Fearlex Group WordPress Multi-Environment Config
  * @version    2.0.0
- * @author     Studio 24 Ltd  <hello@studio24.net>
+ * @author     Arleys Resco <arleys@fearlexgroup.com>
  */
   
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** MySQL hostname */
-define('DB_HOST', '');
+define('DB_HOST', 'localhost');
 
 /** The name of the database for WordPress */
 define('DB_NAME', '');
