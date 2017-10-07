@@ -5,7 +5,7 @@
  * WP_ENV needs to match environments defined in wp-config.env.php
  *
  * @package    Fearlex Group WordPress Multi-Environment Config
- * @version    2.0
+ * @version    2.0.0
  * @author     Arleys Resco  <arleys@fearlexgroup.com>
  */
 
@@ -19,7 +19,9 @@ if ( defined( 'WP_ENV' )) {
 		case 'development' :
 
 			//-- Add Plugin Here: plugin_name/plugin_name.php
-			$plugins = array();
+			$plugins = array(
+				'google-analytics-dashboard-for-wp/gadwp.php',
+			);
 
 			//-- Disable Robots
 			update_option( 'blog_public', 0, true );
@@ -51,7 +53,9 @@ if ( defined( 'WP_ENV' )) {
 		case 'staging' :
 
 			//-- Add Plugin Here: plugin_name/plugin_name.php
-			$plugins = array();
+			$plugins = array(
+				'google-analytics-dashboard-for-wp/gadwp.php',
+			);
 
 			//-- Disable Robots
 			update_option( 'blog_public', 0, true );
