@@ -161,6 +161,3 @@ require  __DIR__ . '/wp-config.' . WP_ENV . '.php';
 if (file_exists( __DIR__ . '/wp-config.local.php')) {
     require  __DIR__ . '/wp-config.local.php';
 }
-
-// 4th - Load plugin config file for current environment
-require __DIR__ . '/wp-config.plugins.php';
