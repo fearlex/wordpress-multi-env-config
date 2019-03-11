@@ -5,9 +5,9 @@
  * Enter any WordPress config settings that are specific to this environment 
  * in this file.
  *
- * @package    Fearlex Group WordPress Multi-Environment Config
+ * @package    QuantumWP WordPress Multi-Environment Config
  * @version    2.0.0
- * @author     Arleys Resco <arleys@fearlexgroup.com>
+ * @author     Arleys Resco <arleys@quantumwp.com>
  */
   
 
@@ -28,7 +28,11 @@ define('DB_USER', '');
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define( 'WP_DEBUG', true ); // Wordpress Debug Mode
+define( 'WP_DEBUG_LOG', true ); // Creates debug.log in wp-content
+define( 'WP_DEBUG_DISPLAY', false ); // Display Debug Info on Front-End/Admin.
+define( 'SCRIPT_DEBUG', false ); // Debug for scripts.
+define( 'SAVEQUERIES', false ); // Save MySQL Queries.
 
 
 // Recommended WP config settings, uncomment to use these

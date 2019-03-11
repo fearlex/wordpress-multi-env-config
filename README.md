@@ -1,11 +1,11 @@
-# Fearlex Group WordPress Multi-Environment Config
+# QuantumWP WordPress Multi-Environment Config
 
-This repository contains Studio 24's standard config setup for WordPress, which 
+This repository contains QuantumWP's standard config setup for WordPress, which 
 loads different config based on current environment. This allows you to have different
 site configuration (e.g. debug mode) for different environments (e.g. production and staging).
 
-Credit is due to FocusLabs [EE Master Config](https://github.com/focuslabllc/ee-master-config)
-who gave me the inspiration for the organisation of the config files.
+Credit is due to Studio24 (https://github.com/studio24/wordpress-multi-env-config) and FocusLabs [EE Master Config](https://github.com/focuslabllc/ee-master-config)
+who gave them the inspiration for the organisation of the config files.
 
 Please note the current version is v2, if you need to use the older v1 version [please see the v1 release](https://github.com/studio24/wordpress-multi-env-config/releases/tag/v1.0.2).
 
@@ -211,6 +211,6 @@ web/
 Example `wp-config.php`
 
 ```
-/** Load the Studio 24 WordPress Multi-Environment Config. */
+/** Load the QuantumWP WordPress Multi-Environment Config. */
 require_once(ABSPATH . '../config/wp-config.load.php');
 ```

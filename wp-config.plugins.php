@@ -4,9 +4,9 @@
  *
  * WP_ENV needs to match environments defined in wp-config.env.php
  *
- * @package    Fearlex Group WordPress Multi-Environment Config
+ * @package    QuantumWP WordPress Multi-Environment Config
  * @version    2.0.0
- * @author     Arleys Resco  <arleys@fearlexgroup.com>
+ * @author     Arleys Resco <arleys@quantumwp.com>
  */
 
 $plugins = array();
@@ -27,13 +27,13 @@ if ( defined( 'WP_ENV' )) {
 			update_option( 'blog_public', 0, true );
 
 			//-- Disable Change Admin Email
-			update_option( 'admin_email', 'arleys@fearlexgroup.com', true );
+			update_option( 'admin_email', 'arleys@quantumwp.com', true );
 
 			//-- Change New Order Email Recipient
 			add_filter( 'woocommerce_email_recipient_new_order', 'dev_wc_change_admin_new_order_email_recipient', 1, 2 );
 
 			/**
-			 * Change WooCommerce New Order Admin Email Programatically
+			 * Change WooCommerce New Order Admin Email Programmatically
 			 *
 			 * @param $recipient
 			 * @param $order
@@ -43,7 +43,7 @@ if ( defined( 'WP_ENV' )) {
 			function dev_wc_change_admin_new_order_email_recipient( $recipient, $order ) {
 				global $woocommerce;
 
-				$recipient = "arleys@fearlexgroup.com";
+				$recipient = "arleys@quantumwp.com";
 
 				return $recipient;
 			}
@@ -61,7 +61,7 @@ if ( defined( 'WP_ENV' )) {
 			update_option( 'blog_public', 0, true );
 
 			//-- Disable Change Admin Email
-			update_option( 'admin_email', 'arleys@fearlexgroup.com', true );
+			update_option( 'admin_email', 'arleys@quantumwp.com', true );
 
 			// Change new order email recipient for registered customers
 			add_filter( 'woocommerce_email_recipient_new_order', 'stg_wc_change_admin_new_order_email_recipient', 1, 2 );
@@ -77,7 +77,7 @@ if ( defined( 'WP_ENV' )) {
 			function stg_wc_change_admin_new_order_email_recipient( $recipient, $order ) {
 				global $woocommerce;
 
-				$recipient = "arleys@fearlexgroup.com";
+				$recipient = "arleys@quantumwp.com";
 
 				return $recipient;
 			}

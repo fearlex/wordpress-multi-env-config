@@ -2,12 +2,12 @@
 /**
  * WordPress Multi-Environment Config - Load config settings
  *
- * @package    Fearlex Group WordPress Multi-Environment Config
+ * @package    QuantumWP WordPress Multi-Environment Config
  * @version    2.0.0
- * @author     Arleys Resco <arleys@fearlexgroup.com>
+ * @author     Arleys Resco <arleys@quantumwp.com>
  */
 
-function fg_load_environment_config() {
+function qwp_load_environment_config() {
 
     /**
      * Setup environment
@@ -145,7 +145,7 @@ function fg_load_environment_config() {
 
 }
 
-fg_load_environment_config();
+qwp_load_environment_config();
 
 /**
  * Load config

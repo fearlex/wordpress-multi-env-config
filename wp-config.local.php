@@ -9,14 +9,17 @@
  * Enter any WordPress config settings that are specific to the local environment
  * in this file.
  *
- * @package    Fearlex Group WordPress Multi-Environment Config
+ * @package    QuantumWP WordPress Multi-Environment Config
  * @version    2.0.0
- * @author     Arleys Resco <arleys@fearlexgroup.com>
+ * @author     Arleys Resco <arleys@quantumwp.com>
  */
 
 
 /** MySQL database password */
 define( 'DB_PASSWORD', 'fearlexroot!' );
+
+//-- Staging
+//define( 'DB_PASSWORD', 'STAGING_PASSWORD' );
 
 //-- Production
 //define( 'DB_PASSWORD', 'PRODUCTION_PASSWORD' );

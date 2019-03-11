@@ -5,9 +5,9 @@
  * Enter any WordPress config settings that are specific to this environment 
  * in this file.
  *
- * @package    Fearlex Group WordPress Multi-Environment Config
+ * @package    QuantumWP WordPress Multi-Environment Config
  * @version    2.0.0
- * @author     Arleys Resco <arleys@fearlexgroup.com>
+ * @author     Arleys Resco <arleys@quantumwp.com>
  */
   
 
